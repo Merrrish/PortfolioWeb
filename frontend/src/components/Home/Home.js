@@ -37,7 +37,9 @@ const About = () => {
                 <span className={styles.txt6}>I’m a Python developer specializing in building efficient, scalable applications. Currently, I’m focused on creating clean, robust code for innovative solutions that make a real impact.</span>
                 <div className = {styles.HeaderRes}>
                     <div className={styles.ResFrame1}>
-                        <span className={styles.txt2}>Message</span>
+                        <a href="mailto:fudo.nara@gmail.com" className={styles.ResFrame1}>
+                            <span className={styles.txt2}>Message</span>
+                        </a>
                     </div>
                 </div>
             </div>
