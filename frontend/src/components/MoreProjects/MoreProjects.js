@@ -46,9 +46,9 @@ const Projects = () => {
                             </div>
                         </div>
                         <div className={styles.card2}>
-                            <span className={styles.txt5}>Telegram API</span>
-                            <span className={styles.txt5}>Aiogram</span>
-                            <span className={styles.txt5}>Python</span>
+                            <span className={styles.txt6}>Telegram API</span>
+                            <span className={styles.txt6}>Aiogram</span>
+                            <span className={styles.txt6}>Python</span>
                         </div>
                     </a>
 
@@ -72,9 +72,9 @@ const Projects = () => {
                             </div>
                         </div>
                         <div className={styles.card2}>
-                            <span className={styles.txt5}>Vercel</span>
-                            <span className={styles.txt5}>React</span>
-                            <span className={styles.txt5}>FrameMotion</span>
+                            <span className={styles.txt6}>Vercel</span>
+                            <span className={styles.txt6}>React</span>
+                            <span className={styles.txt6}>FrameMotion</span>
                         </div>
                     </a>
 
@@ -97,9 +97,9 @@ const Projects = () => {
                             </div>
                         </div>
                         <div className={styles.card2}>
-                            <span className={styles.txt5}>Python</span>
-                            <span className={styles.txt5}>Aiogram</span>
-                            <span className={styles.txt5}>OMDB API</span>
+                            <span className={styles.txt6}>Python</span>
+                            <span className={styles.txt6}>Aiogram</span>
+                            <span className={styles.txt6}>OMDB API</span>
                         </div>
                     </a>
 
@@ -122,9 +122,9 @@ const Projects = () => {
                             </div>
                         </div>
                         <div className={styles.card2}>
-                            <span className={styles.txt5}>VirusTotal API</span>
-                            <span className={styles.txt5}>Python</span>
-                            <span className={styles.txt5}>Aiogram</span>
+                            <span className={styles.txt6}>VirusTotal API</span>
+                            <span className={styles.txt6}>Python</span>
+                            <span className={styles.txt6}>Aiogram</span>
                         </div>
                     </a>
 
@@ -147,9 +147,9 @@ const Projects = () => {
                             </div>
                         </div>
                         <div className={styles.card2}>
-                            <span className={styles.txt5}>GTTS</span>
-                            <span className={styles.txt5}>Python</span>
-                            <span className={styles.txt5}>Aiogram</span>
+                            <span className={styles.txt6}>GTTS</span>
+                            <span className={styles.txt6}>Python</span>
+                            <span className={styles.txt6}>Aiogram</span>
                         </div>
                     </a>
 
@@ -172,8 +172,8 @@ const Projects = () => {
                             </div>
                         </div>
                         <div className={styles.card2}>
-                            <span className={styles.txt5}>VSCode</span>
-                            <span className={styles.txt5}>npm</span>
+                            <span className={styles.txt6}>VSCode</span>
+                            <span className={styles.txt6}>npm</span>
                         </div>
                     </a>
                 </div>
