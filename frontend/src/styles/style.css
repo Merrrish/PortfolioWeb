@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    background: #1F0D2D;
+}
+
+::selection {
+    background-color: #0e0416; /* Цвет фона выделения */
+    color: #E99BFF; /* Цвет текста при выделении */
+}
+
+/* Safari поддерживает специфичный селектор */
+::-moz-selection {
+    background-color: #0e0416;
+    color: #E99BFF;
+}

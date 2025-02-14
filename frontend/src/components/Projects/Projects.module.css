@@ -1,0 +1,223 @@
+.frame {
+    display: flex;
+    padding: 200px 40px 30px 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 200px;
+    align-self: stretch;
+}
+
+.frametxt {
+    display: flex;
+    width: 240px;
+    max-width: 240px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.framecontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 15px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.frametxt2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.txt1 {
+    color: #E99BFF;
+    font-family: "Calling Code Regular";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.txt2 {
+    color: #DECEF3;
+    font-family: "Twentieth Century for Kenmore N Bold";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.horizontalline {
+    border-top: 2px solid rgba(222, 206, 243, 0.75);
+    align-self: stretch;
+    /* Толщина и цвет линии */
+    margin: 0 0; /* Отступы сверху и снизу */
+}
+
+.img {
+    height: 360px;
+    min-width: 240px;
+    max-width: 540px;
+    flex: 1 0 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Чтобы картинка не выходила за пределы контейнера */
+}
+
+.projectImage {
+    width: 100%; /* Заполняет контейнер по ширине */
+    height: 100%; /* Заполняет контейнер по высоте */
+    object-fit: cover; /* Обрезает картинку, чтобы она заполнила контейнер, сохраняя пропорции */
+}
+.content {
+    display: flex;
+    min-width: 240px;
+    max-width: 540px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 15px;
+    flex: 1 0 0;
+}
+
+.content1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+    align-self: stretch;
+}
+
+.content2 {
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 5px;
+    background: #25153E;
+}
+
+.content3 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+    align-self: stretch;
+}
+
+.contentxt1 {
+    align-self: stretch;
+    color: #E99BFF;
+    text-align: right;
+    font-family: "Calling Code Regular";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contentxt2 {
+    align-self: stretch;
+    color: #DECEF3;
+    text-align: right;
+    font-family: "Twentieth Century for Kenmore N Bold";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.contentxt3 {
+    flex: 1 0 0;
+    color: rgba(222, 206, 243, 0.75);
+    text-align: right;
+    font-family: "Twentieth Century for Kenmore N";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.contentxt4 {
+    color: #DECEF3;
+    text-align: right;
+    font-family: "Calling Code Regular";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media (max-width: 800px) {
+
+    .txt1 {
+        font-size: 20px; /* Уменьшение размера шрифта */
+    }
+
+    .txt2 {
+        font-size: 30px; /* Уменьшение размера шрифта */
+    }
+
+    .frame {
+        padding: 100 px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .txt1 {
+        font-size: 20px; /* Уменьшение размера шрифта */
+    }
+
+    .txt2 {
+        font-size: 30px; /* Уменьшение размера шрифта */
+    }
+
+    .frame {
+        padding: 0 px;
+    }
+}
+
+.card111 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon1 {
+    width: 25px;
+    height: 25px;
+    color: #DECEF3;
+}
+
+.icon1:hover {
+    cursor: pointer;
+    color: #E99BFF;
+}
+
+.contentxt2:hover {
+    color: #E99BFF; /* Цвет текста при наведении */
+}
+
+.imageLink {
+    text-decoration: none; /* Убирает стандартное подчеркивание */
+}
+
+.projectImage {
+    transition: filter 0.3s ease; /* Плавное изменение фильтра */
+}
+
+.imageLink:hover .projectImage {
+    filter: brightness(1.4); /* Слегка увеличиваем яркость при наведении */
+}

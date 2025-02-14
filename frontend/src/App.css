@@ -1,0 +1,73 @@
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1F0D2D; /* Фон для прелоадера */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: opacity 0.5s ease, visibility 0.5s ease; /* Плавное исчезновение */
+}
+
+.preloader.fade-out {
+  opacity: 0; /* Исчезновение */
+  visibility: hidden; /* Скрываем элемент */
+}
+
+/* Контейнер для логотипа, чтобы разместить его по центру */
+.logo-container {
+  display: flex;
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center; /* Центрирование по вертикали */
+  height: 100vh; /* Высота контейнера равна высоте окна браузера */
+}
+
+/* Анимация рисования для SVG */
+.path-logo {
+  stroke-dasharray: 200; /* Вычисленная длина пути */
+  stroke-dashoffset: 200; /* Изначально скрыто */
+  animation: draw 5s ease-in-out forwards; /* Параметры анимации */
+}
+
+/* Увеличение размера логотипа */
+svg {
+  width: 200px; /* Размер логотипа */
+  height: 240px; /* Размер логотипа */
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0; /* Конечное значение, путь рисуется */
+  }
+}
+
+html {
+  scroll-behavior: smooth; /* Плавная прокрутка */
+}
+
+@font-face {
+  font-family: 'Twentieth Century for Kenmore N';
+  src: url('assets/fonts/TwentiethCenturyforKenmoreN.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Twentieth Century for Kenmore N Bold';
+  src: url('assets/fonts/TwentiethCenturyforKenmoreNBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Calling Code Regular';
+  src: url('assets/fonts/CallingCode-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

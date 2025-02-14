@@ -1,0 +1,222 @@
+.txt2 {
+    color: #E99BFF;
+    font-family: "Calling Code Regular";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.txt3fr {
+    align-self: stretch;
+    text-align: center;
+}
+
+.txt3 {
+    color: #E99BFF;
+    text-align: center;
+    font-family: "Calling Code Regular", monospace;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: inline-block; /* Делает текст в строке */
+    border-right: 2px solid #E99BFF; /* Эмуляция мигающего курсора */
+    white-space: nowrap; /* Предотвращает перенос текста на новую строку */
+    overflow: hidden; /* Скрывает текст, который еще не напечатан */
+    width: 0; /* Начинаем с нулевой ширины */
+    animation: typing 0.4s steps(30) 0.5s forwards, blink-caret 0.75s step-end infinite; /* Анимация для набора текста и мигания курсора */
+}
+
+/* Анимация набора текста */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 20vh;
+    }
+}
+
+/* Мигание курсора */
+@keyframes blink-caret {
+    50% {
+        border-color: transparent; /* Прячет курсор на полпути */
+    }
+}
+
+
+.txt4 {
+    align-self: stretch;
+    color: #DECEF3;
+    text-align: center;
+    font-family: "Twentieth Century for Kenmore N Bold";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: inline-block;
+    position: relative;
+}
+
+.txt4fr {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    text-align: center;
+    flex-direction: column;
+}
+
+.txt5 {
+    align-self: stretch;
+    color: rgba(222, 206, 243, 0.75);
+    text-align: center;
+    font-family: "Twentieth Century for Kenmore N Bold";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.txt6 {
+    max-width: 480px;
+    width: 100%; /* Убедитесь, что блок занимает всю доступную ширину */
+    color: rgba(222, 206, 243, 0.75);
+    text-align: center; /* Выравнивание текста по центру */
+    font-family: "Twentieth Century for Kenmore N";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    display: flex;
+    justify-content: center; /* Центрирование содержимого по горизонтали */
+    align-items: center; /* Центрирование содержимого по вертикали */
+    flex-wrap: wrap; /* При необходимости переносить текст */
+}
+
+.HomeFr {
+    display: flex;
+    padding: 250px 40px 100px 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+}
+
+.HomeFr1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    align-self: stretch;
+}
+
+.headerRes {
+    width: 85px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.ResFrame1 {
+    cursor: pointer;
+    display: flex;
+    width: 85px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1px solid #E99BFF;
+    background: #1F0D2D;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ResFrame1:hover {
+    background: #E99BFF;
+    transition: color 0.3s ease;
+}
+
+.ResFrame1:hover .txt2{
+    color: #1F0D2D;
+    transition: color 0.3s ease;
+}
+  
+.word {
+    display: inline-block; /* Слово — независимый блок */
+}
+
+.letter {
+    display: inline-block; /* Каждая буква — независимый блок */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Плавный эффект при наведении */
+}
+
+/* Анимация при наведении на букву */
+.letter:hover {
+    transform: translateY(-10px); /* Поднимается на 10px */
+    color:#DECEF3; /* Легкое затемнение */
+}
+  
+  .txt4::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #E99BFF50; /* Цвет выделения */
+    width: 0;
+    height: 100%;
+    transition: width 1s ease-in-out; /* Плавное расширение */
+    pointer-events: none;
+}
+
+.txt4.highlight::after {
+    width: 100%; /* Плавное расширение по всей длине текста */
+}
+
+
+@media (max-width: 800px) {
+
+    .txt4 {
+        font-size: 60px; /* Уменьшение размера шрифта */
+    }
+
+    .txt5 {
+        font-size: 60px; /* Уменьшение размера шрифта */
+    }
+
+    .txt3 {
+        font-size: 14px; /* Уменьшение размера шрифта */
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 15vh;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+
+    .txt4 {
+        font-size: 30px; /* Уменьшение размера шрифта */
+    }
+
+    .txt5 {
+        font-size: 30px; /* Уменьшение размера шрифта */
+    }
+
+    .txt3 {
+        font-size: 12px; /* Уменьшение размера шрифта */
+    }
+
+    .txt2 {
+        font-size: 12px; /* Уменьшение размера шрифта */
+    }
+}

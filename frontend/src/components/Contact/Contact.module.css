@@ -1,0 +1,153 @@
+.frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 40px 250px 40px;
+}
+
+
+.frame1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    align-self: stretch;
+}
+
+.txt1 {
+    max-width: 420px;
+    align-self: stretch;
+    color: #E99BFF;
+    text-align: center;
+    font-family: "Calling Code Regular";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-self: center;
+}
+
+.txt2 {
+    max-width: 580px;
+    align-self: stretch;
+    color: #DECEF3;
+    text-align: center;
+    font-family: "Twentieth Century for Kenmore N";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    align-self: center;
+}
+
+.txt3 {
+    color: #E99BFF;
+    font-family: "Calling Code Regular";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-self: center;
+}
+
+.txt4 {
+    color: #DECEF3;
+    font-family: "Twentieth Century for Kenmore N Bold";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    align-self: center;
+}
+
+.frametxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрирование по вертикали */
+    align-items: center; /* Центрирование по горизонтали */
+    gap: 10px;
+    align-self: center; /* Центрирование внутри родителя */
+}
+
+.frametxt1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: center; /* Центрирование внутри родителя */
+}
+
+
+.horizontalline {
+    border-top: 2px solid rgba(222, 206, 243, 0.75);
+    align-self: stretch;
+    /* Толщина и цвет линии */
+    margin: 0 0; /* Отступы сверху и снизу */
+}
+
+.ResFrame1 {
+    cursor: pointer;
+    display: flex;
+    width: 85px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1px solid #E99BFF;
+    background: #1F0D2D;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ResFrame1:hover {
+    background: #E99BFF;
+    transition: color 0.3s ease;
+}
+
+.ResFrame1:hover .txt5{
+    color: #1F0D2D;
+    transition: color 0.3s ease;
+}
+
+.headerRes {
+    width: 85px;
+    height: 40px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.txt5 {
+    color: #E99BFF;
+    font-family: "Calling Code Regular";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media (max-width: 800px) {
+
+    .txt3 {
+        font-size: 20px; /* Уменьшение размера шрифта */
+    }
+
+    .txt4 {
+        font-size: 30px; /* Уменьшение размера шрифта */
+    }
+}
+
+@media (max-width: 480px) {
+
+    .txt3 {
+        font-size: 20px; /* Уменьшение размера шрифта */
+    }
+
+    .txt4 {
+        font-size: 30px; /* Уменьшение размера шрифта */
+    }
+}

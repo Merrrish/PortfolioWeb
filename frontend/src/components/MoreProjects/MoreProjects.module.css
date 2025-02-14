@@ -1,0 +1,214 @@
+.frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрирует по вертикали */
+    align-items: center; /* Центрирует по горизонтали */
+    padding: 100px 40px;
+}
+
+
+.frame1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%; /* Чтобы занять всю ширину родительского контейнера */
+}
+
+
+.frameT {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрирование по вертикали */
+    align-items: center; /* Центрирование по горизонтали */
+    gap: 10px;
+    align-self: center; 
+    padding-bottom: 30px;
+}
+
+.frameC {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Центрирует карточки по горизонтали */
+    align-items: center; /* Центрирует карточки по вертикали */
+    gap: 15px; /* Расстояние между карточками */
+    max-width: 1000px; /* Убедитесь, что ширина достаточно большая */
+    margin: 0 auto; /* Центрирует блок внутри секции */
+}
+
+
+.frametxt2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.txt1 {
+    color: #E99BFF;
+    font-family: "Calling Code Regular";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.txt2 {
+    color: #DECEF3;
+    font-family: "Twentieth Century for Kenmore N Bold";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    align-self: center;
+    white-space: nowrap;
+}
+
+.horizontalline {
+    border-top: 2px solid rgba(222, 206, 243, 0.75);
+    align-self: stretch;
+    /* Толщина и цвет линии */
+    margin: 0 0; /* Отступы сверху и снизу */
+}
+
+.card {
+    display: flex;
+    min-height: 280px;
+    min-width: 220px;
+    max-width: 320px;
+    padding: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 75px;
+    flex: 1 0 0;
+    border-radius: 10px;
+    background: #25153E;
+    align-self: center;
+    position: relative;
+    transition: transform 0.3s ease; /* плавное поднятие */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    outline: 2px solid #E99BFF;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+}
+
+.card11 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.card111 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    gap: 10px;
+}
+
+.card12 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+.icon1 {
+    width: 25px;
+    height: 25px;
+    color: #DECEF3;
+}
+
+.icon1:hover {
+    cursor: pointer;
+    color: #E99BFF;
+}
+
+.card2 {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 15px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.txt3 {
+    color: #DECEF3;
+    font-family: "Twentieth Century for Kenmore N Bold";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.txt4 {
+    color: rgba(222, 206, 243, 0.75);
+    font-family: "Twentieth Century for Kenmore N";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.txt5:hover {
+    color: #E99BFF; /* Цвет текста при наведении */
+}
+
+.txt5::after {
+    content: ''; /* Псевдоэлемент для линии */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%; /* Начальная ширина линии */
+    height: 1px; /* Толщина линии */
+    background-color: #E99BFF; /* Цвет линии */
+    transition: width 0.3s ease; /* Анимация появления линии */
+}
+
+.txt5:hover::after {
+    width: 100%; /* Линия растягивается при наведении */
+}
+
+.txt5 {
+    color: #E99BFF;
+    font-family: "Calling Code Regular";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    position: relative;
+}
+
+@media (max-width: 800px) {
+
+    .txt2 {
+        font-size: 30px; /* Уменьшение размера шрифта */
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .txt2 {
+        font-size: 30px; /* Уменьшение размера шрифта */
+    }
+}
