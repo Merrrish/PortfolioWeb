@@ -61,7 +61,7 @@ const Projects = () => {
                                     <a href="https://github.com/Merrrish/portfolioWebApp" target="_blank" rel="noopener noreferrer">
                                         <GitIcon className={styles.icon1} />
                                     </a>
-                                    <a href="https://portfolio-link.com" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://portfolio-web-bay-seven.vercel.app/" target="_blank" rel="noopener noreferrer">
                                         <LinkIcon className={styles.icon1} />
                                     </a>
                                 </div>
@@ -72,7 +72,7 @@ const Projects = () => {
                             </div>
                         </div>
                         <div className={styles.card2}>
-                            <span className={styles.txt5}>Django</span>
+                            <span className={styles.txt5}>Vercel</span>
                             <span className={styles.txt5}>React</span>
                             <span className={styles.txt5}>FrameMotion</span>
                         </div>
