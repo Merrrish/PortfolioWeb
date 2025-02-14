@@ -53,7 +53,7 @@ const Projects = () => {
                     </a>
 
                     {/* Другие карточки */}
-                    <a href="https://github.com/Merrrish/Portfolio_Website" target="_blank" rel="noopener noreferrer" className={styles.card}>
+                    <a href="https://github.com/Merrrish/PortfolioWeb" target="_blank" rel="noopener noreferrer" className={styles.card}>
                         <div className={styles.card1}>
                             <div className={styles.card11}>
                                 <FolderIcon className={styles.icon} />
@@ -153,7 +153,7 @@ const Projects = () => {
                         </div>
                     </a>
 
-                    <a href="https://github.com/Merrrish/VSCode_Theme" target="_blank" rel="noopener noreferrer" className={styles.card}>
+                    <a href="https://marketplace.visualstudio.com/publishers/BumbleBeeYellowTheme" target="_blank" rel="noopener noreferrer" className={styles.card}>
                         <div className={styles.card1}>
                             <div className={styles.card11}>
                                 <FolderIcon className={styles.icon} />
