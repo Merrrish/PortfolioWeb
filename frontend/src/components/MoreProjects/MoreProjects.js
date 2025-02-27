@@ -58,7 +58,7 @@ const Projects = () => {
                             <div className={styles.card11}>
                                 <FolderIcon className={styles.icon} />
                                 <div className={styles.card111}>
-                                    <a href="https://github.com/Merrrish/portfolioWebApp" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://github.com/Merrrish/portfolioWeb" target="_blank" rel="noopener noreferrer">
                                         <GitIcon className={styles.icon1} />
                                     </a>
                                     <a href="https://portfolio-web-bay-seven.vercel.app/" target="_blank" rel="noopener noreferrer">
