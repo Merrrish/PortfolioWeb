@@ -59,7 +59,7 @@ const Header = () => {
                     </div>
                     <div className={styles.rightb}>
                         <div className={styles.headerRes}>
-                            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className={styles.ResFrame}>
+                            <a href="/resume1.pdf" target="_blank" rel="noopener noreferrer" className={styles.ResFrame}>
                                 <span className={styles.txt2}>Resume</span>
                             </a>
                         </div>
